@@ -1,0 +1,101 @@
+.containercart{
+    
+    width: 100%;
+    height: 800px;
+    
+}
+.cartnav{
+    height: 150px;
+}
+
+.cart_page{
+    margin: 80px auto;
+
+}
+.cart-info{
+    display: block;
+    margin-left: 10px;
+    color: #5d4a1d;
+    font-weight: 400;
+   
+
+}
+.cart-info small{
+    color: #5d4a1d;
+    font-weight: 400;
+
+}
+.cart-info a {
+    color: #908163;
+    padding-left: 5px;
+}
+.cart-info a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color:#6a4c04;
+}
+.cart_page .price{
+    color:#5a4003;
+    font-weight: 400;
+
+}
+
+table{
+    width: 80%;
+    border-collapse:collapse;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: beige;
+    background-color: #BBAB8C;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    background: #e4dfd5;
+    color: rgb(92, 86, 61);
+    border:none;
+    border-radius: 5px;
+    outline: #e4dfd5;
+}
+td img{
+    width:80px;
+    cursor: pointer;
+}
+.total-price table{
+   
+    border-top: 3px solid rgb(92, 86, 61);
+    width:40%;
+    color: #4c4638;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+
+
+.footercart{
+    
+    margin-top:100px ;
+    margin-bottom:5px;
+    background: #bbab8c; 
+    width: 1535px;
+    height: 350px;
+    margin-left: 5px;
+
+}
+.footercart h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow:0 5px 15px #71654f;
+    color:#FAEED1;
+    transition: all .40s ease;
+    padding-top: 20px;
+    padding-left: 20px;
+}

@@ -1,0 +1,326 @@
+.kids{
+
+    height: 20px;
+    
+
+}
+
+.for_kidsarabic{
+    width: 100px;
+
+}
+
+.for_kids h1{
+
+    margin-top: 300px;
+    margin-left: 700px;
+    margin-right: 400px;
+    padding-top: 20px;
+    font-size: 40px;
+    color:white;
+    text-align: center;
+    text-shadow:0 10px 15px #8b7d63 ;
+    cursor: pointer;
+    transition: all .40s ease;
+    box-shadow: 0 10px 15px #71654f;
+    border-radius: 20px;
+    background:#BBAB8C;
+    width:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+
+   
+
+}
+.for_kids h2{
+
+    margin-top: 150px;
+    margin-left: 700px;
+    margin-right: 400px;
+    padding-top: 20px;
+    font-size:40px ;
+    color:white;
+    text-align: center;
+    text-shadow:0 10px 15px #8b7d63 ;
+    cursor: pointer;
+    transition: all .40s ease;
+    box-shadow: 0 10px 15px #71654f;
+    border-radius: 20px;
+    background:#BBAB8C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:300px;
+    padding-bottom: 20px;
+
+}
+
+.for_kids h1:hover{
+    transform: translateY(-3px) translateX(-5px);
+
+}
+
+.for_kids h2:hover{
+    transform: translateY(-3px) translateX(-5px);
+
+}
+.kids_arabic h1{
+
+    color:#FAEED1;
+    width:600px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    margin-top: 300px; 
+    margin-left: 450px;
+    margin-right: 600px;
+    text-shadow:0 10px 15px #8b7d63 ;
+    font-size: 40px;
+    cursor: pointer;
+    box-shadow: 0 10px 15px #71654f;
+    border-radius: 20px;
+    background:#BBAB8C;
+    transition: all .40s ease;
+    margin-bottom: -50px;
+}
+ .kids_arabic .books_box {
+    width:95%;
+    margin:30px auto;
+    margin-left: 70px;
+    margin-right: 500px;
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    transition: 0.5s;
+    text-align: center;
+}
+ .kids_arabic .books_box .books_card {
+    width:300px;
+    text-align: center;
+    height: auto;
+    border-radius: 10px;
+    font-size: 25px;
+    color:#8b7d63;
+    margin-bottom: 15px;
+    padding:15px 10px;
+    margin-left: 500px;
+    margin-right: 500px;
+    
+
+}
+ .kids_arabic .books_box .books_card p {
+    font-size: 30px;
+    text-align: center;
+    color:#8b7d63;
+    font-weight: 600;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 5px;
+
+}
+ .kids_arabic .books_box .books_card h3{
+
+    color:#7c6842;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+    margin:20px auto;
+    margin-top: 30px;
+    text-shadow: 15px 15px 20px #71654f;
+    transition: all .40s ease;
+
+}
+
+ .kids_arabic .books_box .books_card h3:hover{
+    cursor: pointer;
+    transform: translateY(-3px) translateX(-5px);
+
+}
+
+.kids_arabic .books_box .books_card p:hover {
+
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #8b7d63;
+
+}
+.kids_arabic .books_card img:hover {
+
+    transition:0.5s;
+    color:#8b7d63;
+    cursor: pointer;
+    box-shadow: 0 0 40px #71654f ;
+    text-align: center;
+    width: 200px;
+    transform: translateY(-3px) translateX(-5px);
+    cursor: pointer;
+}
+
+.kids_arabic .books_box .books_card img{
+
+    color:#8b7d63;
+    font-size: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    width: 300px;
+    padding-top: 0px ;
+    margin-top: 200px;
+    transition: all .40s ease;
+    border-radius: 20px;
+}
+
+/*---------------------------------------------kids english page  ---------------------------*/
+.kids_english{
+    margin-left: 150px;
+}
+.kids_english .books_box {
+    width:95%;
+    margin:30px auto;
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    transition: 0.5s;
+    text-align: center;
+}
+.kids_english h1{
+
+    color:#FAEED1;
+    width:600px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    margin-top: 300px; 
+    margin-left: 450px;
+    margin-right: 600px;
+    text-shadow:0 10px 15px #8b7d63 ;
+    font-size: 40px;
+    cursor: pointer;
+    box-shadow: 0 10px 15px #71654f;
+    border-radius: 20px;
+    background:#BBAB8C;
+    transition: all .40s ease;
+    margin-bottom: -50px;
+}
+.kids_english .books_box .books_card {
+    width:300px;
+    text-align: center;
+    height: auto;
+    border-radius: 10px;
+    font-size: 25px;
+    color:#8b7d63;
+    margin-bottom: 15px;
+    padding:15px 10px;
+    margin-left: 600px;
+    margin-right: 600px;
+    
+    
+
+}
+
+.kids_english .books_box .books_card p {
+    font-size: 30px;
+    text-align: center;
+    color:#8b7d63;
+    font-weight: 600;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 5px;
+
+}
+
+.kids_english .books_box .books_card h3{
+
+    color:#7c6842;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+    margin:20px auto;
+    margin-top: 30px;
+    text-shadow: 15px 15px 20px #71654f;
+    transition: all .40s ease;
+
+}
+
+.kids_english .books_box .books_card h3:hover{
+    cursor: pointer;
+    transform: translateY(-3px) translateX(-5px);
+
+}
+
+.kids_english .books_box .books_card p:hover {
+
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #8b7d63;
+
+}
+
+
+.kids_english .books_card img:hover {
+
+    transition:0.5s;
+    color:#8b7d63;
+    cursor: pointer;
+    box-shadow: 0 0 40px #71654f ;
+    text-align: center;
+    width: 200px;
+    transform: translateY(-3px) translateX(-5px);
+    cursor: pointer;
+}
+
+.kids_english .books_box .books_card img{
+
+    color:#8b7d63;
+    font-size: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    width: 300px;
+    padding-top: 0px ;
+    margin-top: 200px;
+    transition: all .40s ease;
+    border-radius: 20px;
+}
+
+.kids_arabic .books_box .books_card i:hover{
+
+    color:beige;
+    cursor: pointer;
+    
+}
+
+.boxwishk{
+    text-align: center;
+   transition:all .40s ease-in ;
+   margin-left: 10px;
+
+}
+.boxwishk:hover{
+    
+    cursor: pointer;
+}
+.boxcartk{
+    text-align: center;
+    transition:all .40s ease-in ;
+    margin-left: 10px;
+    
+
+}
+.boxcartk:hover{
+    
+    cursor: pointer;
+}
+.kids_english .books_box .books_card i{
+
+    color:beige;
+    cursor: pointer;
+    
+    
+}
