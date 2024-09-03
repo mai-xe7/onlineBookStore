@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description " content=" Book store that includes all books you will need and help to increase your knowladge ">
+
+<title>
+    Sign Up
+</title>
+<link rel="icon" href="images/books.png" type="image/png">
+<!--Main link of css file -->
+<link rel="stylesheet" href="sign up css.css">
+
+<!--Render all elements normally -->
+<link rel="stylesheet" href="css/normailize css.css">
+<!--Font Awesome library-->
+<link rel="stylesheet" href="css/all.min.css">
+<!--google font style-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,800;1,600&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+        <div class="log">
+            <label id="label" class="l">Login</label> 
+            <input class=" log-input" id="email" type="email" placeholder="Email"> 
+            <input class=" log-input" id="pass" type="password" placeholder="Password"> 
+            <a id="forget" href="#" onclick="checkpass(event)">Forget Your Password?</a>
+            <button class=" log-btn" id="sub-btn">Login</button> 
+        </div>
+    
+    <script>
+
+        let pass = document.getElementById('pass');
+        let email = document.getElementById('email');
+        let sub_btn = document.getElementById('sub-btn');      
+        let label=document.getElementById('label'); 
+        function setData() {
+            email.addEventListener('keyup', () => {
+                localStorage.setItem('email', email.value);
+            });      
+            pass.addEventListener('keyup', () => {
+                localStorage.setItem('pass', pass.value);
+           });      
+            sub_btn.addEventListener('click', () => {
+                // Validate email and password before showing success message
+                    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                const passwordRegex = /(?=.*[A-Z])(?=.*[a-z])(?=.*[$%@!&*()~]).{8,}$/;
+    
+               if (emailRegex.test(email.value) && passwordRegex.test(pass.value)) {
+                    if (localStorage.getItem('email') === email.value && localStorage.getItem('pass') === pass.value) {
+                            alert('Logged in successfully');
+                    } else {
+                            alert('This email does not exist. Please try to Sign Up.');
+                    }
+                    } else {
+                    alert('Invalid email or password format');
+                    }
+                });
+        }
+    
+            // Initialize fields with values from localStorage
+        if (localStorage.getItem('email')) {
+            email.value = localStorage.getItem('email');
+        }
+        if (localStorage.getItem('pass')) {
+            pass.value = localStorage.getItem('pass');
+        }
+    
+       setData();
+
+
+       function checkpass(event) {
+            event.preventDefault();
+
+            let freg = document.createDocumentFragment();
+            email.classList.add('hidden');
+            pass.classList.add('hidden');
+            sub_btn.classList.add('hidden');
+            forget.classList.add('hidden');
+            label.classList.add('hidden');
+
+            let input1 = document.createElement('input');
+            input1.type = "email";
+            input1.placeholder = "Enter your email";
+            input1.required = true;
+            input1.classList.add('log-input')
+
+            input1.style.cssText=`
+    
+                margin-right:800px;
+            `
+
+            let btn = document.createElement('button');
+            btn.classList.add('log-btn')
+            btn.style.cssText=`
+                width:100px;
+                margin-top:50px;
+                margin-left:-700px;
+            `
+
+            btn.textContent = "Done";
+            btn.addEventListener('click', () => {
+                let storedEmail = localStorage.getItem('email');
+                if (input1.value === storedEmail) {
+                    let storedPass = localStorage.getItem('pass');
+                    alert(`Your password is: ${storedPass}`);
+                } else {
+                    alert('Email not found in local storage');
+                }
+            });
+
+            freg.appendChild(input1);
+            freg.appendChild(btn);
+            document.body.appendChild(freg); // Fixed appending to the document body
+        }
+    </script>
+
+</body>
+</html>
